@@ -21,4 +21,14 @@ public class CustomerService : ICustomerService
         await _uoWCustomerMarketingData.CommitAsync(userId);
         return res;
     }
+
+    public bool EmailExist(string? entityEmail)
+    {
+        return _uoWCustomerMarketingData.RepositoryBase.FindAll().Any(s => s.Email == entityEmail);
+    }
+
+    public bool PhoneExist(string? entityPhone)
+    {
+        return _uoWCustomerMarketingData.RepositoryBase.FindAll().Any(s => s.Phone == entityPhone);
+    }
 }

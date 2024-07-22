@@ -16,6 +16,12 @@ public class CustomerMarketingDataResponse : ResultDto
     {
     }
     
+    public CustomerMarketingDataResponse(bool success, ErrorDto error) : base(success)
+    {
+        this.Success = success;
+        this.Error = error;
+    }
+    
     [JsonPropertyName("data")]
     public CustomerMarketingDataDto? Data { get; set; }
 

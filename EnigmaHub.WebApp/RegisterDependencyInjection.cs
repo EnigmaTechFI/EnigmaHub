@@ -3,6 +3,7 @@ using EnigmaHub.Domain.Context;
 using EnigmaHub.Service.Implementation;
 using EnigmaHub.Service.Interface;
 using EnigmaHub.Service.Repositories;
+using EnigmaHub.Validator;
 using EnigmaHubHelper.Helper;
 
 namespace EliteDomus.WebApp;
@@ -25,6 +26,7 @@ public static class RegisterDependencyInjection
         #endregion
     
         #region Validator Dependency Injection
+        serviceCollection.AddTransient<CustomerMarketingDataValidator>();
         #endregion
 
         #region Helper Dependency Injection

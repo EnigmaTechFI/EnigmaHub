@@ -26,6 +26,7 @@
     <ItemGroup>
       <ProjectReference Include="..\EnigmaHub.Domain\EnigmaHub.Domain.csproj" />
       <ProjectReference Include="..\EnigmaHub.Service\EnigmaHub.Service.csproj" />
+      <ProjectReference Include="..\EnigmaHub.Validator\EnigmaHub.Validator.csproj" />
       <ProjectReference Include="..\EnigmaHubHelper\EnigmaHubHelper.csproj" />
     </ItemGroup>
 

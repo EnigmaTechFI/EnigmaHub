@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnigmaHubHelper", "EnigmaHubHelper\EnigmaHubHelper.csproj", "{06880924-53E4-4691-95EB-5AEC289EDB5E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnigmaHub.Validator", "EnigmaHub.Validator\EnigmaHub.Validator.csproj", "{5FD6AE45-8861-4915-BEA7-D3C1A6628C8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,10 +36,15 @@ Global
 		{06880924-53E4-4691-95EB-5AEC289EDB5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06880924-53E4-4691-95EB-5AEC289EDB5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06880924-53E4-4691-95EB-5AEC289EDB5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FD6AE45-8861-4915-BEA7-D3C1A6628C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FD6AE45-8861-4915-BEA7-D3C1A6628C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FD6AE45-8861-4915-BEA7-D3C1A6628C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FD6AE45-8861-4915-BEA7-D3C1A6628C8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EB958F0F-C51E-458B-A010-82E17341908C} = {2D579FBC-3291-4189-8E92-E38B744FEE7E}
 		{910298A5-0463-4832-90C0-D6FA7567944C} = {2D579FBC-3291-4189-8E92-E38B744FEE7E}
 		{06880924-53E4-4691-95EB-5AEC289EDB5E} = {C4E465F2-0078-4E5D-ADE6-CDD0B233E520}
+		{5FD6AE45-8861-4915-BEA7-D3C1A6628C8C} = {C4E465F2-0078-4E5D-ADE6-CDD0B233E520}
 	EndGlobalSection
 EndGlobal

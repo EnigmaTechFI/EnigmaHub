@@ -18,6 +18,8 @@ public class Error
         MIN_LIMIT_FIELD,
         LENGTH_LIMIT_FIELD,
         VALUE_NOT_CORRECT,
+        EMAIL_NOT_CORRECT,
+        PHONE_NOT_CORRECT,
         DATE_NOT_CORRECT,
         VALUE_ALREADY_PRESENT,
         
@@ -38,5 +40,6 @@ public class Error
     public const string FORM_ERROR = "FORM_ERROR";
     public const string AUTH_ERROR = "AUTH_ERROR";
     public const string EMAIL_ERROR = "EMAIL_ERROR";
+    public const string PHONE_ERROR = "PHONE_ERROR";
     public const string API_ERROR = "API_ERROR";
 }
