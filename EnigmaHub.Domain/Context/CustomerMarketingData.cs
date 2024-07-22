@@ -1,6 +1,6 @@
 ﻿namespace EnigmaHub.Domain.Context;
 
-public class CustomerMarketingData
+public class CustomerMarketingData : TrackableEntity
 {
     public Guid Id { get; set; }
     

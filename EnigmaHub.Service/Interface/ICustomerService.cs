@@ -1,6 +1,8 @@
-﻿namespace EnigmaHub.Service.Interface;
+﻿using EnigmaHub.Domain.Context;
 
-public class ICustomerService
+namespace EnigmaHub.Service.Interface;
+
+public interface ICustomerService
 {
-    
+    public Task<CustomerMarketingData> AddCustomerMarketingData(CustomerMarketingData entity, string userId);
 }

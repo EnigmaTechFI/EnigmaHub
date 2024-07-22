@@ -1,8 +1,8 @@
-﻿using EliteDomus.Domain.Context;
-using EliteDomus.Domain.Data;
+﻿using EnigmaHub.Domain.Context;
+using EnigmaHub.Domain.Data;
 using EnigmaHub.Service.Repositories.Base;
 
-namespace EliteDomus.Service.Repositories;
+namespace EnigmaHub.Service.Repositories;
 
 public interface IEnigmaHubUoW<T> where T : class 
 {
@@ -12,6 +12,5 @@ public interface IEnigmaHubUoW<T> where T : class
     Task CommitAsync(MyUser user);
     Task RollbackAsync();
     public ApplicationDbContext DbContext { get; }
-    IMyUserRepository MyUserRepository { get; }
     IRepositoryBase<T> RepositoryBase { get; }
 }

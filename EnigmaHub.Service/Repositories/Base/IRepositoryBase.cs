@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace EliteDomus.Service.Repositories.Base;
+namespace EnigmaHub.Service.Repositories.Base;
 
 public interface IRepositoryBase<T>
 {

@@ -1,7 +1,7 @@
 using System.Linq.Expressions;
-using EliteDomus.Domain.Data;
+using EnigmaHub.Domain.Data;
 
-namespace EliteDomus.Service.Repositories.Base;
+namespace EnigmaHub.Service.Repositories.Base;
 
 public class RepositoryBase<T> : IRepositoryBase<T> where T : class
 {

@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace EliteDomus.WebApp.CustomDataAttribute;
+namespace EnigmaHub.WebApp.CustomDataAttribute;
 
 [AttributeUsage(AttributeTargets.Class)]
-public class WorkerAuthorizeAttribute : ActionFilterAttribute
+public class EnigmaHubAuthorizeAttribute : ActionFilterAttribute
 {
     public override async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
     {
@@ -17,7 +17,7 @@ public class WorkerAuthorizeAttribute : ActionFilterAttribute
             return;
         }
         var appSettings = context.HttpContext.RequestServices.GetService<IConfiguration>();
-        var apiKey = appSettings["WorkerApiKey"];
+        var apiKey = appSettings["ApiKey"];
         if (!apiKey.Equals(extractedApiKey)) {
             context.HttpContext.Response.StatusCode = 401;
             await context.HttpContext.Response.WriteAsync("Unauthorized client");

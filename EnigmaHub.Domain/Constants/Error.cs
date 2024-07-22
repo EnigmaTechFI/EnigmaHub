@@ -38,4 +38,5 @@ public class Error
     public const string FORM_ERROR = "FORM_ERROR";
     public const string AUTH_ERROR = "AUTH_ERROR";
     public const string EMAIL_ERROR = "EMAIL_ERROR";
+    public const string API_ERROR = "API_ERROR";
 }

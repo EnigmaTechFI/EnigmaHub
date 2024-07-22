@@ -7,7 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Helper\" />
+      <ProjectReference Include="..\EnigmaHub.Domain\EnigmaHub.Domain.csproj" />
+      <ProjectReference Include="..\EnigmaHub.Service\EnigmaHub.Service.csproj" />
     </ItemGroup>
 
 </Project>

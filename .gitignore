@@ -3,3 +3,16 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+
+/.idea/*
+
+/EnigmaHub.Domain/bin/*
+/EnigmaHub.Domain/obj/*
+/EnigmaHub.Service/bin/*
+/EnigmaHub.Service/obj/*
+/EnigmaHub.WebApp/bin/*
+/EnigmaHub.WebApp/obj/*
+/EnigmaHub.Helper/bin/*
+/EnigmaHub.Helper/obj/*
+/EnigmaHub.Validator/bin/*
+/EnigmaHub.Validator/obj/*

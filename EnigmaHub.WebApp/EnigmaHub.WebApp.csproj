@@ -4,6 +4,29 @@
         <TargetFramework>net7.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.20" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.20" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.20">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.20" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.20">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.11" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\EnigmaHub.Domain\EnigmaHub.Domain.csproj" />
+      <ProjectReference Include="..\EnigmaHub.Service\EnigmaHub.Service.csproj" />
+      <ProjectReference Include="..\EnigmaHubHelper\EnigmaHubHelper.csproj" />
+    </ItemGroup>
 
 </Project>

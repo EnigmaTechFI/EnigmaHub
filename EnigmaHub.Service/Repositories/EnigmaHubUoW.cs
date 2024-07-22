@@ -1,16 +1,15 @@
-﻿using EliteDomus.Service.Repositories;
-using EnigmaHub.Domain.Context;
+﻿using EnigmaHub.Domain.Context;
 using EnigmaHub.Domain.Data;
 using EnigmaHub.Service.Repositories.Base;
 
 namespace EnigmaHub.Service.Repositories;
 
-public class EliteDomusUoW<T> : IEliteDomusUoW<T> where T : class
+public class EnigmaHubUoW<T> : IEnigmaHubUoW<T> where T : class
 {
  
     private readonly ApplicationDbContext _dbContext;
 
-    public EliteDomusUoW(ApplicationDbContext dbContext)
+    public EnigmaHubUoW(ApplicationDbContext dbContext)
     {
         _dbContext = dbContext;
         DbContext = dbContext;

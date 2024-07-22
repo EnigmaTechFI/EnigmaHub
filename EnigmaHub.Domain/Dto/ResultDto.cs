@@ -1,16 +1,16 @@
-﻿using EliteDomus.Domain.Constants;
+﻿using EnigmaHub.Domain.Constants;
 
-namespace EliteDomus.Domain.Dto;
+namespace EnigmaHub.Domain.Dto;
 
 public class ResultDto
 {
-    public ResultDto(bool success, string message, EliteDomusError.CustomError desc, string type)
+    public ResultDto(bool success, string message, Error.CustomError desc, string type)
     {
         Error = new ErrorDto(message, desc, type);
         Success = success;
     }
 
-    public ResultDto(bool success) : this(success, "", Domain.Constants.EliteDomusError.CustomError.NOERROR, ""){}
+    public ResultDto(bool success) : this(success, "", Constants.Error.CustomError.NOERROR, ""){}
 
     public bool Success { get; set; }
     public ErrorDto Error { get; set; }
@@ -18,7 +18,7 @@ public class ResultDto
 
 public class ErrorDto
 {
-    public ErrorDto(string message, EliteDomusError.CustomError enumDesc, string type)
+    public ErrorDto(string message, Error.CustomError enumDesc, string type)
     {
         Message = message;
         EnumDesc = enumDesc;
@@ -26,7 +26,7 @@ public class ErrorDto
     }
     
     public string Message { get; set; }
-    public EliteDomusError.CustomError EnumDesc { get; set; }
+    public Error.CustomError EnumDesc { get; set; }
     public int Code => (int)EnumDesc;
     public string Type { get; set; }
     public string Log => $"ERR{Code}: {Message}";

@@ -1,6 +1,6 @@
 ﻿namespace EnigmaHub.Domain.Constants;
 
-public class EnigmaHubRoles
+public class Roles
 {
     public const string Admin = "Admin";
     public const string Manager = "Manager";
