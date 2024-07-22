@@ -10,7 +10,6 @@ using NLog;
 namespace EnigmaHub.WebApp.Controllers.api.v1;
 
 [ApiController]
-[EnigmaHubAuthorize]
 public class CustomerApi : Controller
 {
     private readonly CustomerHelper _customerHelper;
