@@ -37,18 +37,18 @@ public class CustomerApi : Controller
         }
     }
 
-    [HttpGet("api/v1/customer/marketing-data/{email}/{phone}/{redirectUrl}")]
-    public async Task<IActionResult> AddCustomerMarketingData(string email, string phone, string redirectUrl)
+    [HttpGet("api/v1/customer/marketing-data/{email}/{phone}")]
+    public async Task<IActionResult> AddCustomerMarketingData(string email, string phone)
     {
         try
         {
             await _customerHelper.AddCustomerMarketingData(email, phone, Constants.DevUser);
-            return Redirect(redirectUrl);
+            return Ok();
         }
         catch (Exception ex)
         {
             Logger.Error(ex, "Error executing api/v1/customer/marketing-data.");
-            return Redirect(redirectUrl);
+            return BadRequest();
         }
     }
 }
